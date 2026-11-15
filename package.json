@@ -1,0 +1,44 @@
+{
+  "name": "local-devin",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Unofficial, zero-runtime-dependency MCP bridge to the local Devin CLI",
+  "main": "dist/index.js",
+  "bin": {
+    "local-devin": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.zh-CN.md",
+    "README.ja.md",
+    "assets/cover.png",
+    "plugin.json",
+    "mcp.json",
+    "skills/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aynls/Devin-mcp.git"
+  },
+  "bugs": "https://github.com/aynls/Devin-mcp/issues",
+  "keywords": ["devin", "mcp", "cli", "local", "agent"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test",
+    "smoke": "npm run build && node scripts/smoke.js",
+    "check": "npm run typecheck && npm test && npm run smoke",
+    "verify:package": "npm run build && node scripts/verify-package.js",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT"
+}

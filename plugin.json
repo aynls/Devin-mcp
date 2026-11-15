@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "local-devin",
+  "version": "0.2.0",
+  "description": "Unofficial stdio MCP bridge to the local Devin CLI. Delegate bounded tasks and resume explicit local sessions; not the cloud MCP endpoint.",
+  "author": {
+    "name": "熬夜拧螺丝",
+    "url": "https://github.com/aynls"
+  },
+  "repository": "https://github.com/aynls/Devin-mcp",
+  "license": "MIT",
+  "keywords": ["devin", "cli", "mcp", "local", "cursor", "agent"]
+}
